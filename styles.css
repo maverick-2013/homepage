@@ -50,6 +50,11 @@ body {
   margin-bottom: 15px;
 }
 
+.resume__block--last {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 576px) {
   .main-info,
   .contact_info_container {
@@ -101,6 +106,12 @@ body {
   text-decoration: none;
   display: flex;
   justify-content: start;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.contact-info__item:hover {
+  color: var(--primary-text-color);
 }
 
 .contact-info__item:not(:last-child) {
@@ -261,4 +272,45 @@ body {
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+}
+
+.additional-info__interests {
+  margin-bottom: 20px;
+}
+
+.experiences__company:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.experiences__company-project-responsibilities li:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+@media screen and (max-width: 576px) {
+  .resume {
+    margin: 0 auto;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .contact-info__header {
+    font-size: 30px;
+  }
+
+  .contact-info__sub-header {
+    font-size: 17px;
+  }
+
+  .contact-info__avatar {
+    margin: 12px 0;
+  }
+
+  .intro_text,
+  .skills__text {
+    text-align: left;
+  }
 }
